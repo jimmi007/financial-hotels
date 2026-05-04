@@ -8,11 +8,11 @@ from webdriver_manager.chrome import ChromeDriverManager
 import time
 import re
 import csv
-from url import url3
+
 
 options = webdriver.ChromeOptions()
 options.add_argument("--start-maximized")
-
+url3=("https://www.booking.com/searchresults.el.html?label=gen173nr-10CAEoggI46AdIM1gEaFyIAQGYATO4ARfIAQ_YAQPoAQH4AQGIAgGoAgG4Arn0yM8GwAIB0gIkMDFmNmNmYmItMWIxYi+++++++00NzhiLWIzOTItZjk3ZmRmZmFiMmY02AIB4AIB&aid=304142&checkin=2026-05-08&checkout=2026-05-09&dest_id=4162&dest_type=region&group_adults=2&req_adults=2&no_rooms=1&broad_search_to_sr=1&order=price")
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
 wait = WebDriverWait(driver, 15)
 
